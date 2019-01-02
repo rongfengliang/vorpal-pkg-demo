@@ -30,7 +30,7 @@ vorpal
   });
 
 vorpal
-  .command('color [color] [text...]')
+  .command('color [color] [text...]',"设置颜色")
   .autocomplete(['2018-12-31', '2019-01-03', '2019-03-01'])
   .action(function (args, cb) {
     this.log(args)
@@ -51,6 +51,13 @@ vorpal
       self.log(`Okay, ${result.time} it is!`);
       cb();
     });
+  });
+
+  vorpal
+  .catch('[words...]', '帮助提示')
+  .action(function (args, cb) {
+    this.log(args.words.join(' ') + ' 请输入正确的命令');
+    cb();
   });
 
   vorpal.delimiter('dalongrong$').
