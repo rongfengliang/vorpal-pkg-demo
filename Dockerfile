@@ -9,5 +9,5 @@ FROM alpine:latest
 WORKDIR /app
 COPY --from=build /app/first-linux /app/first-linux
 COPY --from=build /app/first-macos /app/first-macos
-COPY --from=build /app/first-win.exe /first-win.exe
+COPY --from=build /app/first-win.exe /app/first-win.exe
 CMD ["sh"]
