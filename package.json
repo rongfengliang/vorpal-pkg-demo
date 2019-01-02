@@ -1,0 +1,19 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "bin": "app.js",
+  "dependencies": {
+    "vorpal": "^1.12.0"
+  },
+  "pkg": {
+    "scripts": "app.js"
+  },
+  "devDependencies": {
+    "pkg": "^4.3.5"
+  },
+  "scripts": {
+    "build":"pkg ."
+  }
+}

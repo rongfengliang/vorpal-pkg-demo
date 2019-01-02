@@ -1,0 +1,5 @@
+node_modules/**
+first-linux
+first-macos
+first-win.exe
+yarn.lock
